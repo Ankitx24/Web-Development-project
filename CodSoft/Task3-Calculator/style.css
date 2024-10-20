@@ -1,0 +1,77 @@
+/* General Styles */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box; 
+}
+
+.calculator {
+    width: 320px;
+    background-color: #060606; 
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; 
+}
+
+/* Display Styles */
+.display {
+    text-align: right;
+    margin-bottom: 20px;
+}
+
+.display input {
+    width: 100%;
+    padding: 15px;
+    font-size: 2em;
+    border: none;
+    border-radius: 5px;
+    background-color: #f4f4f4; 
+    color: #000; 
+    box-sizing: border-box; 
+}
+
+/* Button Styles */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    padding: 20px;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #7bd3eb; 
+    color: white;
+    transition: background-color 0.3s ease;
+    box-sizing: border-box; 
+}
+
+button:hover {
+    background-color: #9ef9a2;
+}
+
+.zero {
+    grid-column: span 2; /* Spans across two columns for the '0' button */
+}
+
+/* Specific button styles */
+button:nth-child(1), button:nth-child(4) {
+    background-color: #f54c4c; /* Red buttons for Clear and Delete */
+}
+
+button:nth-child(16) {
+    background-color: #f54c4c; 
+}
+
+button:nth-child(16):hover {
+    background-color: #f54c4c;
+}
